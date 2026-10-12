@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20000000000000000000001 /* SwiftDataExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* SwiftDataExampleView.swift */; };
 		A10000000000000000000001 /* FoundationModelsDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000003 /* FoundationModelsDemoApp.swift */; };
 		A10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000004 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A20000000000000000000002 /* SwiftDataExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataExampleView.swift; sourceTree = "<group>"; };
 		A10000000000000000000003 /* FoundationModelsDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationModelsDemoApp.swift; sourceTree = "<group>"; };
 		A10000000000000000000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A10000000000000000000005 /* FoundationModelsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationModelsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,7 @@
 			children = (
 				A10000000000000000000003 /* FoundationModelsDemoApp.swift */,
 				A10000000000000000000004 /* ContentView.swift */,
+				A20000000000000000000002 /* SwiftDataExampleView.swift */,
 			);
 			path = FoundationModelsDemo;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			files = (
 				A10000000000000000000001 /* FoundationModelsDemoApp.swift in Sources */,
 				A10000000000000000000002 /* ContentView.swift in Sources */,
+				A20000000000000000000001 /* SwiftDataExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

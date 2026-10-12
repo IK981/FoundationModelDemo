@@ -40,3 +40,18 @@ If the Generate button is disabled, read the model availability message shown in
 - https://developer.apple.com/documentation/FoundationModels/generating-content-and-performing-tasks-with-foundation-models
 - https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel
 - https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes
+
+## SwiftData example
+
+Open the **SwiftData** tab to add tasks, tap a task to toggle completion, and swipe to delete (or use Edit). Close and relaunch the app to verify that your tasks persist. This tab does not require Apple Intelligence.
+
+See `FoundationModelsDemo/SwiftDataExampleView.swift` for the complete example:
+
+- `@Model` defines the stored `TodoItem` class.
+- `.modelContainer(for: TodoItem.self)` in the app sets up persistent storage.
+- `@Query` fetches tasks newest first and updates the list when data changes.
+- `@Environment(\.modelContext)` provides the context for inserting, updating, and deleting tasks.
+- `try modelContext.save()` saves changes explicitly; failures show an alert and roll back the change.
+- The preview uses an in-memory container so preview data is temporary.
+
+Official documentation: [ModelContainer](https://developer.apple.com/documentation/swiftdata/modelcontainer) and [ModelContext](https://developer.apple.com/documentation/swiftdata/modelcontext).
