@@ -55,3 +55,16 @@ See `FoundationModelsDemo/SwiftDataExampleView.swift` for the complete example:
 - The preview uses an in-memory container so preview data is temporary.
 
 Official documentation: [ModelContainer](https://developer.apple.com/documentation/swiftdata/modelcontainer) and [ModelContext](https://developer.apple.com/documentation/swiftdata/modelcontext).
+
+## iPad layout example
+
+Open the **iPad Layout** tab (best on an iPad or the iPad simulator) to see how SwiftUI manages a wide window:
+
+- `NavigationSplitView` keeps a sidebar and a detail pane side by side.
+- `horizontalSizeClass` switches between `HStack` and `VStack` when the window is regular (full iPad) or compact (narrow Split View / iPhone).
+- `LazyVGrid` with `.adaptive` columns adds more cards as the window gets wider.
+- `.inspector(isPresented:)` shows a trailing pane on iPad and a sheet on compact width.
+
+See `FoundationModelsDemo/iPadLayoutExampleView.swift`. The target already includes iPad (`TARGETED_DEVICE_FAMILY = 1,2`).
+
+Official documentation: [NavigationSplitView](https://developer.apple.com/documentation/swiftui/navigationsplitview) and [inspector](https://developer.apple.com/documentation/swiftui/view/inspector(ispresented:content:)).
